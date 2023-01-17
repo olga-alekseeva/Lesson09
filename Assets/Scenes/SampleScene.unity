@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 311056641}
   - component: {fileID: 311056640}
   - component: {fileID: 311056639}
-  - component: {fileID: 311056638}
   - component: {fileID: 311056637}
   m_Layer: 0
   m_Name: Sphere
@@ -152,26 +151,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 311056636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b531edf2a206c41ae82496b78828e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 79d0e1f985a648646ac4cf8212b58a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  _material: {fileID: 0}
-  _depth: 4
-  _speedRotation: 80
---- !u!135 &311056638
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311056636}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  _center:
+    Position: {x: 0, y: 0, z: 0}
+    Color: {r: 1, g: 1, b: 1, a: 1}
+  _points:
+  - Position: {x: 0.5, y: 0.5, z: 0.5}
+    Color: {r: 1, g: 0.8666533, b: 0, a: 1}
+  - Position: {x: 0.5, y: 0.5, z: 0.5}
+    Color: {r: 0.10907112, g: 0.6037736, b: 0, a: 0}
+  - Position: {x: 0.5, y: 0.5, z: 0.5}
+    Color: {r: 0.9622642, g: 0, b: 0, a: 0}
+  - Position: {x: 0.5, y: 0.5, z: 0.5}
+    Color: {r: 0.745283, g: 0, b: 0.48831725, a: 0}
+  _frequency: 6
 --- !u!23 &311056639
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -191,7 +186,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9014ff157f1f21e499186822d439eea8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -220,7 +215,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311056636}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!4 &311056641
 Transform:
   m_ObjectHideFlags: 0
