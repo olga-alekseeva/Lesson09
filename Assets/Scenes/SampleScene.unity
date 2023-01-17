@@ -152,10 +152,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 311056636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5130bf18137067d48b3a033ee84e5e4e, type: 3}
+  m_Script: {fileID: 11500000, guid: 59b531edf2a206c41ae82496b78828e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  _material: {fileID: 0}
   _depth: 4
+  _speedRotation: 80
 --- !u!135 &311056638
 SphereCollider:
   m_ObjectHideFlags: 0
